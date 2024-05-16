@@ -34,6 +34,7 @@ const HomePage = () => {
       <Family/>
       <Faq />
       <Footer />
+      
     </div >
     
   )
