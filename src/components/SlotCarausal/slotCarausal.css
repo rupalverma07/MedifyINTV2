@@ -1,0 +1,13 @@
+.leftBtn{
+    position: absolute;
+    left: 0px;
+    z-index: 1000;
+    bottom: 12px;
+}
+
+.rightBtn{
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    bottom: 12px;
+}
