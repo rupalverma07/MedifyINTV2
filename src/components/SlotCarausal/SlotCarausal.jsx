@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import {slotAvailable} from '../../constant/data'
 // import './styles.css';
 
 // import required modules
@@ -27,10 +28,12 @@ const getDateValue = (n) =>{
         return 'Tommorrow'
     }
     let date = new Date();
-    console.log(date)
+    console.log(date.toString().split(" "))
+    let dateArr =date.toString().split(" ")
     let day = date.getDate()+n
     console.log(day)
-    return day;
+    let formattedDate = `${dateArr[0]} ${day}, ${dateArr[1]}`
+    return formattedDate;
 }
 // getDateValue(3)
 const SlotCarausal = () => {
@@ -43,10 +46,10 @@ const SlotCarausal = () => {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <Controls data = {data} />
+        <Controls data = {slotAvailable} />
         <CarauselLeftBtn />
         <CarauselRightBtn />
-        {data.map(d => <SwiperSlide>{getDateValue(d)}</SwiperSlide>)}
+        {slotAvailable.map(d => <SwiperSlide>{getDateValue(d.date)}<p className='slotText'>{d.slotCount} slots available</p></SwiperSlide>)}
         {/* <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>

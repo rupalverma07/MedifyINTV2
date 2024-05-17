@@ -55,6 +55,23 @@ color: #01A400;
 
 .slotBooking{
     height: 280;
-    border: 1px solid blue;
+    margin-top: 18px;
+    /* border: 1px solid blue; */
     /* position: relative; */
+}
+
+.time{
+    /* width: 84px; */
+height: 31.59px;
+
+padding: 2px 2px 2px 22px;
+/* gap: 0px; */
+border-radius: 3px;
+border: 1px solid #2AA7FF;
+
+}
+
+.swiper-slide{
+    width: 90px !important;
+    margin-left: 150px !important;
 }

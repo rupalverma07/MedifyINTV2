@@ -29,6 +29,26 @@ const[showBooking, setShowBooking] = useState(false);
         </div>
         {showBooking ? (<div className='slotBooking'>
         <SlotCarausal />
+        <div className='row g-4 mt-2'>
+            <div className='col-2'>Morning</div>
+            <div className='col-2'><div className='time'>10:00AM </div></div>
+            <div className='col-2'><div className='time'>11:00AM</div></div>
+            <div className='col-2'></div>
+            <div className='col-2'></div>
+            <div className='col-2'></div>
+            <div className='col-2'>Afternoon</div>
+            <div className='col-2'></div>
+            <div className='col-2'><div className='time'>01:00PM</div></div>
+            <div className='col-2'><div className='time'>03:00PM</div></div>
+            <div className='col-2'><div className='time'>04:30PM</div></div>
+            <div className='col-2'></div>
+            <div className='col-2'>Evening</div>
+            <div className='col-2'></div>
+            <div className='col-2'></div>
+            <div className='col-2'></div>
+            <div className='col-2'></div>
+            <div className='col-2'><div className='time'>07:00PM</div></div>
+        </div>
         </div>) : ('')}
     </div>
   )
