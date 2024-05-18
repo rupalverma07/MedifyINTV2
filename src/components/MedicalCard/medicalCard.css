@@ -2,7 +2,7 @@
     min-height: 269px;
     width: 850px;
     border-radius: 15px;
-    padding: 50px 2px 12px 35px;
+    padding: 50px 35px 12px 35px;
     margin-bottom: 20px;
 }
 
@@ -31,6 +31,10 @@ font-weight: 500;
 line-height: 21px;
 text-align: center;
 color:#fff;
+}
+
+.bookBtn:active{
+    background-color: blue;
 }
 
 .hName{
@@ -68,10 +72,48 @@ padding: 2px 2px 2px 22px;
 /* gap: 0px; */
 border-radius: 3px;
 border: 1px solid #2AA7FF;
+cursor: pointer;
+color: #2AA7FF;
+}
 
+.time:hover{
+    background-color: #2AA7FF;
+    color: #fff;
+}
+.time:hover{
+    background-color: blue;
 }
 
 .swiper-slide{
     width: 90px !important;
-    margin-left: 150px !important;
+    margin-left: 125px !important;
+}
+
+.fees{
+    color: #787887;
+    font-family: Poppins;
+    /* font-size: 14px; */
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    margin-right: 3px;
+}
+
+.consultText{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 19.6px;
+text-align: left;
+color: #414146;
+
+}
+
+.freeText{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 700;
+line-height: 19.6px;
+text-align: left;
+color:#02A401
 }
