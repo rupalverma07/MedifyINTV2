@@ -78,7 +78,9 @@ useEffect(() =>{
             </div>
         </div>
         </div>
+        
         {showBooking ? (<div className='slotBooking'>
+        <div className='divider'></div>
         <SlotCarausal bookingDate={slotDate}/>
         <div className='row g-4 mt-2'>
             <div className='col-2'>Morning</div>
