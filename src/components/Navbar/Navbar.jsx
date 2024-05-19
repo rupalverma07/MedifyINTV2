@@ -15,7 +15,7 @@ const Navbar = ({type}) => {
         <div className='navList'>Surgeries</div>
         <div className='navList'>Software for Provider</div>
         <div className='navList'>Facilities</div>
-        <div><button className='navBtn'><Link to="/myBooking">My Bookings</Link></button></div>
+        <div><Link to="/myBooking"><button className='navBtn'>My Bookings</button></Link></div>
       </div>
     </div>
     </div>

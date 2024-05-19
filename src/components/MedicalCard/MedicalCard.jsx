@@ -7,7 +7,7 @@ import rupees from '../../assets/currency.png'
 const getLocalStorageData = () =>{
   let data = JSON.parse(localStorage.getItem("myBooking"))
   console.log(data,'data')
-  if(data.length>0){
+  if(data !== null){
     return data    
   }
   return []
